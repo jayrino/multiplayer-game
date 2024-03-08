@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dungeon fighters</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    
+    <div class="game-container">
+        <div class="floor-text"></div>
+    </div>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script> <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDzsqpjMk73abTbt2aNpqMixyksnsH302M",
+            authDomain: "multiplayer-game-fc23a.firebaseapp.com",
+            databaseURL: "https://multiplayer-game-fc23a-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "multiplayer-game-fc23a",
+            storageBucket: "multiplayer-game-fc23a.appspot.com",
+            messagingSenderId: "750660240995",
+            appId: "1:750660240995:web:b299a2f0ff6782b33b5a56"
+        };
+        const app = firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- game -->
+    <script src="keylistener.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
